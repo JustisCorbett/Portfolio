@@ -14,13 +14,12 @@ window.onload = () => {
 
     for (let i = 0; i < sectionButtons.length; i++) {
         el = sectionButtons[i];
-        console.log(el);
-        el.addEventListener("click", activateSection(el));
+        el.addEventListener("click", activateSection, false);
     }
 };
 
-function activateSection (button) {
-    let sectionName = button.dataset.section;
+function activateSection (evt) {
+    let sectionName = evt.target.dataset.section;
     console.log(sectionName);
     for (let i = 0; i < sectionButtons.length; i++) {
         let el = sectionButtons[i];

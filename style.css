@@ -78,7 +78,7 @@ button:hover {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .box-text-container {
@@ -98,6 +98,8 @@ button:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 .skill-title{
@@ -109,3 +111,16 @@ button:hover {
 .skill-items{
     padding-left: 1em;
 }
+
+@media only screen and (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .box-buttons-container {
+        flex-direction: row;
+    }
+}
+
