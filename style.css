@@ -27,6 +27,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
+    margin: 6em 8em 6em 8em;
 }
 
 .title-container {
@@ -36,7 +37,7 @@ body {
     align-items: flex-start;
     font-family: var(--title-font);
     font-size: 500%;
-    margin: 2em 2em 1em 2em;
+    
 }
 
 .title-desc {
@@ -48,6 +49,9 @@ body {
 .link-container {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
 }
 
 .link {
