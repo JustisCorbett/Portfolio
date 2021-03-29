@@ -28,6 +28,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     margin: 6em 8em 6em 8em;
+    flex-wrap: wrap;
 }
 
 .title-container {
