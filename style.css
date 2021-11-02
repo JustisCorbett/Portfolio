@@ -150,7 +150,6 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "project1 project2" "project3 project4";
     grid-gap: 1em;
     margin: 2em;
 
@@ -194,7 +193,7 @@ button:hover {
     
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
     .box-container {
         
         margin-left: 5em;
@@ -203,6 +202,9 @@ button:hover {
     .project-link-content {
         font-size: 125%;
         padding: 0.5em;
+    }
+    .projects-container {
+        grid-template-columns: 1fr;
     }
 }
 
