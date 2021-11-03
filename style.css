@@ -8,19 +8,23 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 1em;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1em;
 }
 
 body {
-  font-size: 62.5%;
-  font-weight: 600;
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-  font-family: var(--text-font);
+    font-size: 62.5%;
+    font-weight: 600;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: var(--text-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .head-container {
@@ -30,6 +34,7 @@ body {
     align-items: flex-end;
     margin: 6em 8em 6em 8em;
     flex-wrap: wrap;
+    width: 80%;
 }
 
 .title-container {
@@ -68,7 +73,7 @@ body {
     align-items: flex-start;
     margin-left: 10em;
     margin-right: 10em;
-    width: 90%;
+    width: 80%;
 }
 
 .box-buttons-container {
@@ -99,7 +104,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover, button:focus, button:active {
     color: var(--secondary-text-color);
     background-color: var(--secondary-bg-color);
 }
@@ -153,6 +158,8 @@ button:hover {
     grid-template-rows: auto;
     grid-gap: 1em;
     margin: 2em;
+    min-width: 0;
+    justify-items: center;
 }
 
 .project-container {
@@ -163,9 +170,11 @@ button:hover {
     border-radius: 10px;
     border: 2px solid var(--secondary-bg-color);
     font-weight: 600;
+    width: 100%;
+    min-width: 0;
 }
 
-.project-container:hover {
+.project-container:hover, .project-container:focus, .project-container:active {
     color: var(--secondary-text-color);
     background-color: var(--secondary-bg-color);
     cursor: pointer;
@@ -194,15 +203,22 @@ button:hover {
 }
 
 @media only screen and (max-width: 1080px) {
+
+    .head-container {
+        margin: width: 90%;
+    }
     .box-container {
         
         margin-left: 5em;
         margin-right: 5em;
+        width: 90%;
     }
+
     .project-link-content {
         font-size: 125%;
         padding: 0.5em;
     }
+
     .projects-container {
         grid-template-columns: 1fr;
     }
@@ -210,9 +226,61 @@ button:hover {
 
 @media only screen and (max-width: 464px) {
     .box-container {
+        margin-left: 0em;
+        margin-right: 0em;
+        width: 100%;
+    }
+
+    .box-text{
+        font-size: 100%;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        margin: 0em;
+    }
+
+    .project-container {
+        padding: 1em;
+        font-weight: 500;
+        width: 90%;
+    }
+
+    button{
         
-        margin-left: 3em;
-        margin-right: 3em;
+        font-size: 150%;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .box-container {
+        margin-left: 10em;
+        margin-right: 10em;
+        width: 80%;
+    }
+
+    .box-text{
+        font-size: 250%;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        margin: 2em;
+        min-width: 0;
+        justify-items: center;
+    }
+
+    .project-container {
+        padding: 2em;
+        font-weight: 600;
+        width: 100%;
+        min-width: 0;
+    }
+
+    button{
+        font-size: 250%;
     }
 }
 
