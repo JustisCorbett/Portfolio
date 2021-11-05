@@ -23,7 +23,7 @@ async function activateSection (evt) {
     let box = document.getElementById("box-container");
     console.log(sectionName);
     box.classList.add("shrink");
-    await new Promise(r => setTimeout(r, 300));
+    await new Promise(r => setTimeout(r, 500));
     for (let i = 0; i < sectionButtons.length; i++) {
         let el = sectionButtons[i];
         if (el.dataset.section == sectionName) {
@@ -43,6 +43,6 @@ async function activateSection (evt) {
         }
     }
     box.classList.remove("shrink");
-    await new Promise(r => setTimeout(r, 300));
+    await new Promise(r => setTimeout(r, 500));
 };
 
