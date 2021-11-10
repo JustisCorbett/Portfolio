@@ -322,12 +322,15 @@ button:hover, button:focus, button:active {
         align-items: center;
         justify-content: center;
     }
+
     .title-container {
         order: 2;
     }
+
     .color-container {
         order: 1;
     }
+
     .link-container {
         order: 3;
     }
@@ -338,10 +341,6 @@ button:hover, button:focus, button:active {
         width: 100%;
     }
 
-    .box-text{
-        font-size: 100%;
-    }
-
     .projects-container {
         grid-template-columns: 1fr;
         grid-gap: 1em;
@@ -350,13 +349,6 @@ button:hover, button:focus, button:active {
 
     .project-container {
         padding: 1em;
-        font-weight: 500;
-        width: 90%;
-    }
-
-    button{
-        
-        font-size: 150%;
     }
 }
 
@@ -381,7 +373,6 @@ button:hover, button:focus, button:active {
 
     .project-container {
         padding: 2em;
-        font-weight: 600;
         width: 100%;
         min-width: 0;
     }
