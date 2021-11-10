@@ -2,7 +2,7 @@
   --title-font: 'Major Mono Display', monospace;
   --text-font: 'Roboto Mono', monospace;
   --main-bg-color: #131313;
-  --secondary-bg-color: #adadad;
+  --secondary-bg-color: #cccccc;
   --main-text-color: #f8f8f8;
   --secondary-text-color: #141414;
 }
@@ -62,7 +62,53 @@ body {
     margin: 6em 8em 6em 8em;
     flex-wrap: wrap;
     width: 80%;
-    
+}
+
+.color-container {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    align-items: center;
+}
+
+
+#dark {
+    color: var(--secondary-text-color);
+    font-size: 160%;
+    font-weight: 900;
+    background-color: var(--secondary-bg-color);
+    width: 100%;
+    border: 3px solid var(--main-text-color);
+    border-radius: 10px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+
+
+#light {
+    color: var(--main-text-color);
+    font-size: 125%;
+    font-weight: 900;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    border: 2px solid var(--main-text-color);
+    border-radius: 0px 10px 10px 0px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.link-icon {
+    fill: var(--main-text-color);
 }
 
 .title-container {
@@ -271,6 +317,21 @@ button:hover, button:focus, button:active {
 }
 
 @media only screen and (max-width: 464px) {
+    .head-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title-container {
+        order: 2;
+    }
+    .color-container {
+        order: 1;
+    }
+    .link-container {
+        order: 3;
+    }
+
     .box-container {
         margin-left: 0em;
         margin-right: 0em;
