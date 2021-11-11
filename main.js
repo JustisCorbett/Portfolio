@@ -37,8 +37,10 @@ async function darkMode () {
     lightModeButton.style.fill = "var(--secondary-text-color)";
     darkModeButton.style.backgroundColor = "var(--main-bg-color)";
     lightModeButton.style.backgroundColor = "var(--secondary-bg-color)";
-    darkModeButton.classList.toggle("color-selected");
-    lightModeButton.classList.toggle("color-selected");;
+    if (lightModeButton.classList.contains("color-selected")) {
+        darkModeButton.classList.toggle("color-selected");
+        lightModeButton.classList.toggle("color-selected");
+    }
 }
 
 async function lightMode () {
@@ -50,8 +52,10 @@ async function lightMode () {
     lightModeButton.style.fill = "var(--main-text-color)";
     darkModeButton.style.backgroundColor = "var(--secondary-bg-color)";
     lightModeButton.style.backgroundColor = "var(--main-bg-color)";
-    darkModeButton.classList.toggle("color-selected");
-    lightModeButton.classList.toggle("color-selected");
+    if (darkModeButton.classList.contains("color-selected")) {
+        darkModeButton.classList.toggle("color-selected");
+        lightModeButton.classList.toggle("color-selected");
+    }
 }
 
 async function activateSection (evt) {
