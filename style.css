@@ -274,7 +274,7 @@ button:hover, button:focus, button:active {
     align-content: center;
     padding: 2em;
     border-radius: 10px;
-    box-shadow: 0 0 0.5em 0em var(--shadow-color);
+    box-shadow: 0 0 0.5em 0.2em var(--shadow-color);
     font-weight: 600;
     width: 100%;
     min-width: 0;
