@@ -180,14 +180,7 @@ button {
     box-shadow: 0 0 0.3em 0em var(--shadow-color);
     border: none !important;
     border-radius: 10px 10px 0px 0px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
-    -webkit-transition: box-shadow 0s !important;
-    -moz-transition: box-shadow 0s !important;
-    -o-transition: box-shadow 0s !important;
-    transition: box-shadow 0s !important;
+    transition: all 0.5s, box-shadow 0s;
     padding: 1em;
     cursor: pointer;
     z-index: 1;
@@ -233,10 +226,7 @@ button:hover, button:focus, button:active {
     border-radius: 0px 10px 10px 10px;
     max-height: 100%;
     width: 100%;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s cubic-bezier(0.42, 0, 0.13, 1.07);
+    transition: all 0.5s cubic-bezier(0.42, 0, 0.13, 1.07), background-color 0s;
     overflow: hidden !important;
     will-change: transform;
     transform: translateZ(0);
