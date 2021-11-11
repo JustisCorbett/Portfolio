@@ -51,7 +51,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     font-family: var(--text-font);
-    font-size: 300%;
+    font-size: 225%;
     flex: 1;
 }
 
@@ -76,12 +76,12 @@ body {
 
 #dark {
     color: var(--secondary-text-color);
-    font-size: 160%;
+    font-size: 125%;
     font-weight: 900;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--main-bg-color);
     width: 100%;
-    border: 3px solid var(--main-text-color);
-    border-radius: 10px;
+    box-shadow: 0 0 0.5em 0.15em var(--shadow-color);
+    border-radius: 10px 0px 0px 10px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -96,9 +96,9 @@ body {
     color: var(--main-text-color);
     font-size: 125%;
     font-weight: 900;
-    background-color: var(--main-bg-color);
+    background-color: var(--secondary-bg-color);
     width: 100%;
-    border: 2px solid var(--main-text-color);
+    box-shadow: 0 0 0.5em 0.15em var(--shadow-color);
     border-radius: 0px 10px 10px 0px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -106,6 +106,12 @@ body {
     transition: all 0.5s;
     padding: 0.5em;
     cursor: pointer;
+}
+
+.color-selected {
+    border-radius: 10px !important;
+    box-shadow: 0 0 0.65em 0.15em var(--shadow-color) !important;
+    font-size: 175% !important;
 }
 
 .link-icon {
@@ -178,6 +184,10 @@ button {
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    -webkit-transition: box-shadow 0s !important;
+    -moz-transition: box-shadow 0s !important;
+    -o-transition: box-shadow 0s !important;
+    transition: box-shadow 0s !important;
     padding: 1em;
     cursor: pointer;
     z-index: 1;
@@ -187,13 +197,13 @@ button {
 button:hover, button:focus, button:active {
     color: var(--main-text-color);
     background-color: var(--main-bg-color);
+    0 0 0.65em 0em var(--shadow-color)
 }
 
 .selected {
     color: var(--main-text-color);
     background-color: var(--main-bg-color);
     box-shadow: 0 1em 0em 0em var(--main-bg-color), 0 0 0.65em 0em var(--shadow-color);
-    transition: box-shadow 0s !important;
     z-index: 3;
 }
 
@@ -336,6 +346,20 @@ button:hover, button:focus, button:active {
 }
 
 @media only screen and (max-width: 464px) {
+    button {
+        font-size: 225%;
+        padding: 0.25em;
+        box-shadow: 0 0 0.5em 0.15em var(--shadow-color);
+    }
+
+    .selected {
+        box-shadow: 0 1em 0em 0em var(--main-bg-color), 0 0 0.75em 0.15em var(--shadow-color);
+    }
+
+    .box-text-container {
+        box-shadow: 0em 0em 1.25em 0.15em var(--shadow-color);
+    }
+
     .head-container {
         flex-direction: column;
         align-items: center;
