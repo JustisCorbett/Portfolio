@@ -5,7 +5,7 @@
     --secondary-bg-color: #cccccc;
     --main-text-color: #f8f8f8;
     --secondary-text-color: #141414;
-    --shadow-color: #474747; 
+    --shadow-color: #5c5c5c; 
 }
 
 * {
@@ -229,6 +229,7 @@ button:hover, button:focus, button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 2em;
 }
 
 .project-title {
@@ -252,10 +253,12 @@ button:hover, button:focus, button:active {
     font-family: var(--title-font);
     font-size: 150%;
     text-decoration: underline;
+    padding-bottom: 1em;
 }
 
 .skill-items{
     padding-left: 1em;
+    padding-bottom: 1em;
 }
 
 .projects-container {
