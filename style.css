@@ -80,7 +80,7 @@ body {
     font-weight: 900;
     background-color: var(--main-bg-color);
     width: 100%;
-    box-shadow: 0 0 0.25em 0.25em var(--shadow-color);
+    box-shadow: 0 0 0em 0.25em var(--shadow-color);
     border-radius: 10px 0px 0px 10px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -98,7 +98,7 @@ body {
     font-weight: 900;
     background-color: var(--secondary-bg-color);
     width: 100%;
-    box-shadow: 0 0 0.25em 0.25em var(--shadow-color);
+    box-shadow: 0 0 0em 0.25em var(--shadow-color);
     border-radius: 0px 10px 10px 0px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -106,11 +106,12 @@ body {
     transition: all 0.5s;
     padding: 0.5em;
     cursor: pointer;
+    margin-left: 5px;
 }
 
 .color-selected {
     border-radius: 10px !important;
-    box-shadow: 0 0 0.25em 0.25em var(--shadow-color) !important;
+    box-shadow: 0 0 0em 0.25em var(--shadow-color) !important;
     font-size: 175% !important;
 }
 
@@ -177,7 +178,7 @@ button {
     background-color: var(--main-bg-color);
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 0.25em 0.25em var(--shadow-color);
+    box-shadow: 0 0 0em 0.25em var(--shadow-color);
     border: none !important;
     border-radius: 10px 10px 0px 0px;
     transition: all 0.5s, box-shadow 0s;
@@ -196,7 +197,7 @@ button:hover, button:focus, button:active {
 .selected {
     color: var(--main-text-color);
     background-color: var(--main-bg-color);
-    box-shadow: 0 1em 0em 0em var(--main-bg-color), 0 0 0.25em 0.25em var(--shadow-color);
+    box-shadow: 0 1em 0em 0em var(--main-bg-color), 0 -6px 0em 0.25em var(--shadow-color);
     z-index: 3;
 }
 
@@ -209,7 +210,7 @@ button:hover, button:focus, button:active {
 }
 
 .box-text-container {
-    box-shadow: 0em 0em 0.75em 0.65em var(--shadow-color);
+    box-shadow: 0em 0em 0em 0.65em var(--shadow-color);
     z-index: 2;
     position: relative;
     border-radius: 0px 10px 10px 10px;
@@ -277,7 +278,7 @@ button:hover, button:focus, button:active {
     align-content: center;
     padding: 2em;
     border-radius: 10px;
-    box-shadow: 0 0 0.5em 0.2em var(--shadow-color);
+    box-shadow: 0 0 0em 0.2em var(--shadow-color);
     font-weight: 600;
     width: 100%;
     min-width: 0;
@@ -338,15 +339,15 @@ button:hover, button:focus, button:active {
     button {
         font-size: 225%;
         padding: 0.25em;
-        box-shadow: 0 0 0.5em 0.15em var(--shadow-color);
+        box-shadow: 0 0 0em 0.15em var(--shadow-color);
     }
 
     .selected {
-        box-shadow: 0 1em 0em 0em var(--main-bg-color), 0 0 0.75em 0.15em var(--shadow-color);
+        box-shadow: 0 1em 0em 0em var(--main-bg-color), 0 -6px 0em 0.15em var(--shadow-color);
     }
 
     .box-text-container {
-        box-shadow: 0em 0em 1.25em 0.15em var(--shadow-color);
+        box-shadow: 0em 0em 0em 0.15em var(--shadow-color);
     }
 
     .head-container {
