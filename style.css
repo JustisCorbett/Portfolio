@@ -335,7 +335,7 @@ button:hover, button:focus, button:active {
     }
 }
 
-@media only screen and (max-width: 464px) {
+@media only screen and (max-width: 600px) {
     button {
         font-size: 225%;
         padding: 0.25em;
