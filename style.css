@@ -233,6 +233,10 @@ button:hover, button:focus, button:active {
     padding-bottom: 2em;
 }
 
+.text-section {
+    margin-top: 1em;
+}
+
 .project-title {
     margin-bottom: 1em;
 }
