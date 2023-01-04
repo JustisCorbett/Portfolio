@@ -243,7 +243,7 @@ button:hover, button:focus, button:active {
 
 .box-skills {
     padding: 1em;
-    margin-top: 2em;
+    margin-top: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
