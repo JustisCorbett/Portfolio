@@ -363,11 +363,12 @@ button:hover, button:focus, button:active {
     }
 
     .selected {
-        box-shadow: 0 1em 0em 0em var(--main-bg-color), 0 -6px 0em 0.15em var(--shadow-color);
+        box-shadow: 0 1em 0em 0em var(--main-bg-color), 0 -6px 0em 0.25em var(--shadow-color);
     }
 
     .box-text-container {
-        box-shadow: 0em 0em 0em 0.15em var(--shadow-color);
+        box-shadow: 0em 0em 0em 0.5em var(--shadow-color);
+        border-radius: 0px 5px 10px 10px;
     }
 
     .head-container {
